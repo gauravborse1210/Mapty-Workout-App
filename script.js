@@ -419,7 +419,7 @@ class App {
     const workout = this.#workouts.find(w => w.id === workoutEl.dataset.id);
     if (!workout) return;
 
-    // 🔴 DELETE the workout from DOM, array, and map
+    //  DELETE the workout from DOM, array, and map
     document.querySelector(`[data-id="${workout.id}"]`).remove();
 
     const markerObj = this.#markers.find(m => m.id === workout.id);
